@@ -1,0 +1,117 @@
+
+:root {
+    /* Light Theme */
+
+    --White: hsl(0, 0%, 100%); /*BG*/
+    --Very-Pale-Blue: hsl(225, 100%, 98%); /*Top BG Pattern*/
+    --Light-Grayish-Blue: hsl(227, 47%, 96%); /*Card BG*/
+    --Light-Hover: hsl(227, 9%, 81%); /*Card Hover*/
+    --Dark-Grayish-Blue: hsl(228, 12%, 44%); /*Text*/
+    --Very-Dark-Blue: hsl(230, 17%, 14%); /*Text*/
+}
+
+
+
+/* BACKGROUND */
+
+.bg-top-light{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: var(--Very-Pale-Blue);
+    z-index: -1;
+}
+
+.bg-bottom-light{
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--White);
+    z-index: -1;
+}
+
+
+/* HEADING */
+
+.title-light > h4 {
+    position: relative;
+    bottom: 10px;
+    color: #FF5757;
+}
+
+
+
+/* TOGGLE BUTTON */
+
+.toggle-light {
+    position: relative;
+    right: 10px;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 700;
+}
+
+/* CARDS */
+.card-light {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-light:hover {
+    background-color: var(--White);
+    cursor: pointer;
+}
+
+.username-light {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 1em;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.username-light > img {
+    position: relative;
+    top: 5px;
+}
+
+.number-card-light {
+    color: var(--Very-Dark-Blue);
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.followers-light {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+.overview-light {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.number-tile-light {
+    color: var(--Very-Dark-Blue);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.updateBtn-light{
+    color: var(--Very-Dark-Blue);
+}
+
+@media only screen and (max-width: 900px) {
+  .toggle-light {
+    position: relative;
+    right: 50px;
+  }
+}

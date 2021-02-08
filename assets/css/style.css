@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --Very-Dark-Blue: hsl(230, 17%, 14%); /*BG*/
+  --Very-Dark-Blue-Top: hsl(231, 20%, 18%); /*Top BG Pattern*/
+  --Dark-Desaturated-Blue: hsl(228, 28%, 20%); /*Card BG*/
+  --Dark-Hover: hsl(230, 28%, 32%); /*Card BG Hover*/
+  --Desaturated-Blue: hsl(228, 34%, 66%); /*Text*/
+  --White: hsl(0, 0%, 100%); /*Text*/
+
+  --White: hsl(0, 0%, 100%); /*BG*/
+  --Very-Pale-Blue: hsl(225, 100%, 98%); /*Top BG Pattern*/
+  --Light-Grayish-Blue: hsl(227, 47%, 96%); /*Card BG*/
+  --Dark-Grayish-Blue: hsl(228, 12%, 44%); /*Text*/
+  --Very-Dark-Blue: hsl(230, 17%, 14%); /*Text*/
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+footer{
+  background-color: var(--Dark-Desaturated-Blue);
+  color: var(--White);
+  width:100%;
+}
+
+footer p{
+  margin: 0;
+}
+
+footer p a{
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+footer p a:hover{
+  text-decoration: none;
+  color: #fcfcfc;
+  opacity: 0.8;
+}
+
+.header-bg {
+  background-color: var(--Dark-Desaturated-Blue);
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+
+.mt-20{
+    margin-top: 140px;
+}
+
+.form-control {
+    border-radius: 4px;
+}
+.form-control:focus {
+    border-color: var(--Dark-Desaturated-Blue);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(37 42 65 / 50%);
+}
